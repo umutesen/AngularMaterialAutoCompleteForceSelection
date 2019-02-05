@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+
+    <mat-form-field class="full-width">
+        <input type="text" placeholder="Project" matInput formControlName="project" [matAutocomplete]="projectAutoComplete">
+        <mat-autocomplete #projectAutoComplete="matAutocomplete" [displayWith]="displayWith">
+            <mat-option *ngFor="let project of projects" [value]="project">
+                {{ project.name }}
+            </mat-option>
+        </mat-autocomplete>
+
+        <mat-error *ngIf="form.controls['project'].hasError('required')">
+            Please enter a value
+        </mat-error>
+
+        <mat-error *ngIf="form.controls['project'].hasError('incorrect')">
+            Please select a valid project
+        </mat-error>
+    </mat-form-field>
+
+</form>
