@@ -1,5 +1,5 @@
 # AngularMaterialAutocompleteForceSelection
-Demonstrating the built-in calendar component of Angular Material library.
+Force object selection in Angular Material Autocomplete component.
 
 The project contains the code to accompany blog post on [How to Force Selection in Angular Material Autocomplete](https://onthecode.co.uk/force-selection-angular-material-autocomplete/).
 
